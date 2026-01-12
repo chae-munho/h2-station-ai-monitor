@@ -11,29 +11,6 @@
                      UriSource="pack://application:,,,/Images/charging-car.png" />
         <BitmapImage x:Key="WaitingCarIcon"
                      UriSource="pack://application:,,,/Images/waiting-car.png" />
-
-        <!-- 공통 버튼 스타일 -->
-        <Style x:Key="RoundedButtonStyle" TargetType="Button">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                CornerRadius="10"
-                                SnapsToDevicePixels="True">
-                            <ContentPresenter
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                TextElement.Foreground="{TemplateBinding Foreground}"
-                                Content="{TemplateBinding Content}"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </UserControl.Resources>
 
     <Border Background="#252525">

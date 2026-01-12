@@ -5,17 +5,36 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:H2StationAIMonitor.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="1020" d:DesignWidth="1020">
+             d:DesignHeight="510" d:DesignWidth="510">
+    <UserControl.Resources>
+        <BitmapImage x:Key="SampleImage"
+                     UriSource="pack://application:,,,/H2StationAIMonitor;component/Images/sample-screen.png" />
+    </UserControl.Resources>
+    
     <Grid Background="#797979">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        <TextBlock Text="NOT FOUND" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   Foreground="#5A0D0D" FontSize="24"/>
+
+        <!--screen-->
+        <Image Source="{StaticResource SampleImage}" Stretch="UniformToFill" />
         
-        
+        <!--header-->
+        <Grid VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.ColumnSpan="3" Height="30" Background="#2A2A2A" Opacity=".5" />
+
+            <!--cctv 상태에 따라 색이 바뀜 #8E8E8E-->
+            <Border Background="#28C716" Margin="12" Width="6" Height="6" CornerRadius="10" />
+            <TextBlock Grid.Column="1"
+                       VerticalAlignment="Center"
+                       Foreground="White"
+                       FontSize="14"
+                       Text="CAM N  192.168.0.N"/>
+        </Grid>
     </Grid>
 </UserControl>

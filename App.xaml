@@ -30,7 +30,7 @@
         <!--헤더-->
         <Style x:Key="SectionHeaderBorderStyle" TargetType="Border">
             <Setter Property="Background" Value="#646464"/>
-            <Setter Property="Height" Value="31"/>
+            <Setter Property="Height" Value="30"/>
             <Setter Property="Padding" Value="10,0,0,0"/>
         </Style>
 

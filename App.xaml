@@ -26,5 +26,19 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <!--헤더-->
+        <Style x:Key="SectionHeaderBorderStyle" TargetType="Border">
+            <Setter Property="Background" Value="#646464"/>
+            <Setter Property="Height" Value="31"/>
+            <Setter Property="Padding" Value="10,0,0,0"/>
+        </Style>
+
+        <!--헤더 타이틀-->
+        <Style x:Key="SectionHeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
     </Application.Resources>
 </Application>

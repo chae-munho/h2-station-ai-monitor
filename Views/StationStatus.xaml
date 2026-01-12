@@ -28,12 +28,9 @@
             </Grid.ColumnDefinitions>
 
             <!-- 헤더 -->
-            <Border Grid.ColumnSpan="2" Background="#646464">
-                <TextBlock Text="STATION STATUS"
-                           Margin="10,0,0,0"
-                           VerticalAlignment="Center"
-                           FontSize="14"
-                           Foreground="White"/>
+            <Border Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource SectionHeaderBorderStyle}">
+                <TextBlock Style="{StaticResource SectionHeaderTextStyle}"
+               Text="STATION STATUS"/>
             </Border>
 
             <!--row1-->

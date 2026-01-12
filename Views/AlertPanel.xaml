@@ -20,14 +20,11 @@
             </Grid.RowDefinitions>
 
             <!-- 헤더 -->
-            <Border Grid.Row="0" Background="#646464">
-                <TextBlock Text="ALERT SYSTEM"
-                           Margin="10,0,0,0"
-                           VerticalAlignment="Center"
-                           FontSize="14"
-                           Foreground="White"/>
+            <Border Grid.Row="0" Style="{StaticResource SectionHeaderBorderStyle}">
+                <TextBlock Style="{StaticResource SectionHeaderTextStyle}"
+               Text="ALERT SYSTEM"/>
             </Border>
-
+            
             <!-- BODY -->
             <Grid Grid.Row="1" Margin="0">
                 <Grid.RowDefinitions>

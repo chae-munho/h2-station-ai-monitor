@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\charging-car.png" />
     <None Remove="Images\speaker.png" />
+    <None Remove="Images\waiting-car.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,8 +20,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\charging-car.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\speaker.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\waiting-car.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 

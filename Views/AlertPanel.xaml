@@ -9,7 +9,7 @@
     <!--공통 리소스 -->
     <UserControl.Resources>
         <BitmapImage x:Key="SpeakerIcon"
-                     UriSource="pack://application:,,,/Images/speaker.png" />
+                     UriSource="pack://application:,,,/H2StationAIMonitor;component/Images/speaker.png" />
     </UserControl.Resources>
 
     <Border Width="405" Height="190" Background="#252525">

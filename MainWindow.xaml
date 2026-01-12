@@ -4,9 +4,31 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H2StationAIMonitor"
+        xmlns:views="clr-namespace:H2StationAIMonitor.Views"
         mc:Ignorable="d"
         Title="H2 Station AI Monitor" Height="1120" Width="1920">
     <Grid Background="#3F3F3F">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="190" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="817" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1020" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="405" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="405" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <views:Cameras Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" />
+        <views:StationStatus Grid.Row="1" Grid.Column="3" />
+        <views:AlertPanel Grid.Row="1" Grid.Column="5" />
+        <views:EventLogs Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" />
     </Grid>
 </Window>

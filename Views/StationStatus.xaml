@@ -8,10 +8,11 @@
              d:DesignHeight="190" d:DesignWidth="405">
     <UserControl.Resources>
         <BitmapImage x:Key="ChargingCarIcon"
-                     UriSource="pack://application:,,,/Images/charging-car.png" />
+               UriSource="pack://application:,,,/H2StationAIMonitor;component/Images/charging-car.png" />
         <BitmapImage x:Key="WaitingCarIcon"
-                     UriSource="pack://application:,,,/Images/waiting-car.png" />
+               UriSource="pack://application:,,,/H2StationAIMonitor;component/Images/waiting-car.png" />
     </UserControl.Resources>
+
 
     <Border Background="#252525">
         <Grid>

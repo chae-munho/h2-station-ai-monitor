@@ -10,6 +10,7 @@
         Height="1120" Width="1920"
         WindowStyle="None"
         ResizeMode="CanResize"
+        AllowsTransparency="True"
         Background="#3F3F3F">
     <Viewbox Stretch="Fill">
         <Grid Background="#3F3F3F">
@@ -41,11 +42,11 @@
                 <Border Background="Transparent"
                     MouseLeftButtonDown="Header_MouseLeftButtonDown">
                     <TextBlock Text="H2 Station AI Monitor"
-                    Foreground="White"
-                    FontSize="16"
-                    FontWeight="SemiBold"
-                    VerticalAlignment="Center"
-                    Margin="16,0,0,0"/>
+                        Foreground="White"
+                        FontSize="16"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"
+                        Margin="16,0,0,0"/>
                 </Border>
 
 
@@ -56,9 +57,22 @@
                     BorderThickness="0"
                     Cursor="Hand"
                     Click="CloseButton_Click">
+                    <!--hover 효과 제거 스타일-->
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
                     <Image Source="/Images/close.png"
-                Width="14" Height="15"
-                Stretch="Fill"/>
+                        Width="14" Height="15"
+                        Stretch="Fill"/>
                 </Button>
             </Grid>
 
